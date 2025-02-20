@@ -1,0 +1,18 @@
+{
+  "install": "npm install",
+  "start": "npm run dev",
+  "watch": {
+    "install": {
+      "include": [
+        "^package\\.json$"
+      ]
+    },
+    "restart": {
+      "include": [
+        "^\\.env$",
+        "^server/",
+        "^shared/"
+      ]
+    }
+  }
+}
